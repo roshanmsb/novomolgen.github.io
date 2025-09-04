@@ -112,12 +112,14 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  padding: 20px;
+  padding: 15px;
   font-size: 0;
 }
 

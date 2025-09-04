@@ -14,7 +14,7 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:title" content="NovoMolGen">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
@@ -25,7 +25,7 @@
 
 
   <title>NovoMolGen</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/molecule.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -56,22 +56,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Kamran Chitsaz</a><sup>*</sup>,</span>
+                <a href="https://kmchiti.github.io/" target="_blank">Kamran Chitsaz</a><sup>1,2,*</sup>,</span>
                 <span class="author-block">
-                  <a href="https://roshanmsb.github.io" target="_blank">Roshan Balaji</a><sup>*</sup>,</span>
+                  <a href="https://roshanmsb.github.io" target="_blank">Roshan Balaji</a><sup>5,6,7,*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Quentin Fournier</a>,</span>
+                    <a href="https://qfournier.github.io/" target="_blank">Quentin Fournier</a><sup>2</sup>,</span><br>
                     <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Nirav Pravinbhai Bhatt</a><sup>+</sup>,</span>
+                    <a href="https://biotech.iitm.ac.in/innerfaculty.php?fname=Nirav%20P%20Bhatt" target="_blank">Nirav Pravinbhai Bhatt</a><sup>5,6,7,8</sup>,</span>
                     <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sarath Chandar</a><sup>+</sup>
+                    <a href="https://sarathchandar.in/" target="_blank">Sarath Chandar</a><sup>1,2,3,4</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block"><br><sup>1</sup> Chandar Research Lab, <sup>2</sup> Mila – Quebec AI Institute, <sup>3</sup> Polytechnique Montréal, <sup>4</sup> Canada CIFAR AI Chair</span>
+                    <span class="author-block">
+                      <sup>5</sup> BioSystems Engineering and Control Lab,
+                      <sup>6</sup> Wadhwani School of Data Science and AI, IIT Madras,
+                      <br><sup>7</sup> The Centre for Integrative Biology and Systems Medicine (IBSE),
+                      <sup>8</sup> IIT Madras Zanzibar
+                    </span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                    <span class="eql-cntrb"><small><br><sup>+</sup>Indicates Equal Supervision</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -134,11 +139,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/novomolgen.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We introduce <b>NovoMolGen</b>, a family of open-source transformer-based foundation models pretrained on 1.5 billion molecules, evaluating the effects of molecular representation, tokenization, model scaling, and dataset size on <i>de novo</i> generation.
       </h2>
     </div>
   </div>
@@ -146,14 +151,28 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">AI in Chemistry: A Quest for New Medicines</h2>
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <div class="content has-text-justified">
+              <p>
+                The search for new medicines is one of humanity's toughest challenges, made harder by the sheer size of the chemical universe. Scientists estimate there could be between 10²³ and 10⁶⁰ possible drug-like molecules, a number so vast that testing even a fraction of them is impossible. To tackle this, researchers are turning to artificial intelligence. Molecular Large Language Models (Mol-LLMs) treat molecules as text-like strings and apply the same transformer technology behind popular tools like ChatGPT. Inspired by breakthroughs in natural language processing, many in the field have assumed that scaling up, bigger models trained on more data, will naturally lead to better results. But chemistry is not a natural language. While words follow flexible rules shaped by context, molecules obey strict physical and chemical laws, and their meaning is tied to some chemical function. 
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <figure class="image">
+              <img src="static/images/token_example.jpeg" alt="Molecular Tokenization Example" style="width: 100%; height: auto;"/>
+            </figure>
+          </div>
+        </div>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This raises an important question: Does scaling up really work the same way in drug discovery? We challenge this assumption with <b>NovoMolGen</b>, a family of open-source foundation models for chemistry and present the largest systematic study (>30,000 experiments) to date on Mol-LLMs by evaluating the effects of molecular representation, tokenization, model scaling, and dataset size on <i>de novo</i> generation.
           </p>
         </div>
       </div>
@@ -163,120 +182,140 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Results Section 2: Pretraining Results -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Establishing a New Standard in Molecular Design</h2>
+        <div class="content has-text-justified">
+          <p>
+            NovoMolGen achieves state-of-the-art performance in goal-directed molecular design, where the task is to generate new compounds with specific, multi-property profiles under strict oracle budget constraints. On the Practical Molecular Optimization (PMO) benchmark, which captures a wide range of drug discovery challenges, NovoMolGen consistently outperforms strong baselines, including widely used frameworks like REINVENT and recent state-of-the-art methods like <i>f</i>-RAG. Importantly, these improvements are observed not just for the largest models but also for smaller variants, highlighting that the approach is broadly effective rather than dependent on scale alone.
+          </p>
+        </div>
+        <div class="has-text-centered" style="margin: 20px 0;">
+          <figure class="image">
+            <img src="static/images/pmo_results.jpg" alt="PMO Results" style="max-width: 100%; height: auto; margin: 0 auto; display: block;"/>
+          </figure>
+        </div>
+        <div class="columns">
+          <div class="column is-one-half">
+            <div class="content has-text-justified">
+              <p>
+                In protein-ligand docking, NovoMolGen achieves better performance compared to multiple existing models. Our models generate molecules that bind more strongly to protein targets and identify a higher proportion of candidates that are novel, drug-like, and synthesizable compared to previous methods. Across multiple targets (including the cancer target <b><i>parp1</b></i>), our models deliver substantially higher hit ratios, meaning they are far more efficient at uncovering high-quality molecules. This demonstrates that NovoMolGen has learned a strong chemical prior, enabling it to explore chemical space effectively and propose candidates that meet multiple medicinal chemistry criteria simultaneously.          
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-half">
+            <figure class="image">
+              <img src="static/images/docking_pose.jpeg" alt="Docking Pose" style="width: 100%; height: auto;"/>
+              <figcaption class="has-text-centered" style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                Molecular docking visualization showing NovoMolGen-generated compounds binding to protein targets <b><i>parp1</b></i> (top) and <b><i>braf</b></i> (bottom).
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">The Scaling Problem</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the world of AI, a common belief is that bigger is always better. The thinking goes that larger models trained on more data will inevitably lead to better performance. Our research shows this isn't necessarily true for chemistry. We found that a relatively small model can learn the fundamental rules of molecular structure very quickly, and making the model bigger or training it for longer yields surprisingly little benefit.   
+          </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+        <div class="has-text-centered" style="margin: 20px 0;">
+          <figure class="image">
+            <img src="static/images/pretrain_results.jpg" alt="Pretrain Results" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
+          </figure>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+        <div class="content has-text-justified">
+          <p>
+            Performance on key design tasks plateaued remarkably early in the training process. This suggests that once a model has mastered the basic "grammar" of chemistry, simply showing it more examples doesn't teach it much more about designing effective molecules. This is a game-changing insight. It means that state-of-the-art results in molecular design don't require massive, resource-intensive models. This democratizes the field, allowing academic labs and smaller research groups to contribute to the cutting edge of drug discovery without needing a supercomputer.                 </p>
+          </p>
+        </div>
+          <div class="has-text-centered" style="margin: 20px 0;">
+          <figure class="image">
+            <img src="static/images/training_progress.jpg" alt="Training Progress" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
+          </figure>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Are We Measuring What Actually Matters?</h2>
+        <div class="columns">
+          <div class="column is-one-half">
+            <div class="content has-text-justified">
+              <p>
+                Our investigation also revealed a critical disconnect: the metrics we use to grade these models during pretraining don't predict how well they'll perform on real-world tasks. A popular metric, Fréchet ChemNet Distance (FCD), measures how well a model can generate a batch of molecules that looks like a reference dataset. But we found that a model's FCD score has very little correlation with its ability to design a novel molecule for a specific purpose. We were grading models on their ability to copy what's already known, not on their creativity or efficiency in solving a new problem. This finding is a call to action for the research community to develop new benchmarks that measure what truly matters: a model's ability to be an efficient and innovative partner in the scientific discovery process.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-half">
+            <figure class="image">
+              <img src="static/images/fcd_scatter.jpg" alt="FCD Scatter Plot" style="width: 100%; height: auto;"/>
+              <figcaption class="has-text-centered" style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                FCD does not correlate with downstream task performance: The plot compares the FCD score against the PMO benchmark score            
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">The Path Forward: From Chemical Syntax to Function</h2>
+            <div class="content has-text-justified">
+              <p>
+                Our findings point to a clear new direction for the field. To build better models, we need to shift our focus from teaching them chemical syntax (what molecules look like) to teaching them functional semantics (what molecules do). The vast chemical databases used for training are great for learning the rules of assembly, but they lack information about biological function.   
+              </p>
+              <p>
+                Future models should be trained with objectives that are directly related to a molecule's purpose, such as its interaction with a protein target or its desired physicochemical properties. On a more practical note, our study also confirmed that better ways of representing molecules, like using Byte Pair Encoding (BPE) instead of relying on atoms to recognize common chemical building blocks, consistently improve efficiency and performance.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">An Open-Source Foundation for Discovery</h2>
+        <div class="has-text-centered" style="margin: 20px 0;">
+          <figure class="image">
+            <img src="static/images/molecule_generation.jpeg" alt="Molecule Generation" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
+          </figure>
+        </div>
+        <div class="content has-text-justified">
+        <p>
+          By providing a state-of-the-art foundation model, our work enables any lab, regardless of computational resources, to bypass the expensive pretraining phase and focus directly on the creative and scientific challenges of fine-tuning and application. We have made our pretrained models, datasets, and code fully open-source to empower other researchers and accelerate progress, whether finding a new drug or designing a novel material. We invite the community to build on this work and help shape the future of AI-driven science.         </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
