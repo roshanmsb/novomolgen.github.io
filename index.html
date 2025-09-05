@@ -202,15 +202,15 @@
           <div class="column is-one-half">
             <div class="content has-text-justified">
               <p>
-                In protein-ligand docking, NovoMolGen achieves better performance compared to multiple existing models. Our models generate molecules that bind more strongly to protein targets and identify a higher proportion of candidates that are novel, drug-like, and synthesizable compared to previous methods. Across multiple targets (including the cancer target <b><i>parp1</b></i>), our models deliver substantially higher hit ratios, meaning they are far more efficient at uncovering high-quality molecules. This demonstrates that NovoMolGen has learned a strong chemical prior, enabling it to explore chemical space effectively and propose candidates that meet multiple medicinal chemistry criteria simultaneously.          
+                In protein-ligand docking, NovoMolGen achieves better performance compared to multiple existing models. Our models generate molecules that bind more strongly to protein targets and identify a higher proportion of candidates that are novel, drug-like, and synthesizable compared to previous methods. Across multiple targets (including the cancer target <b><i>parp1</b></i>), our models deliver high-quality molecules with a strict oracle budget of 3000 molecule evaluations per run. This demonstrates that NovoMolGen has learned a strong chemical prior, enabling it to explore chemical space effectively and propose candidates that meet multiple medicinal chemistry criteria simultaneously. The NovoMolGen models achieve hit ratios often twice as high as strong baselines. These gains hold even for the smaller variants: scaling up to 300M parameters yields only modest improvements, suggesting the 32M and 157M models were already capturing the essentials of designing ligands that bind strongly to multiple protein targets.        
               </p>
             </div>
           </div>
           <div class="column is-one-half">
             <figure class="image">
-              <img src="static/images/docking_pose.jpeg" alt="Docking Pose" style="width: 100%; height: auto;"/>
+              <img src="static/images/docking_pose.jpeg" alt="Docking Pose" style="width: 98%; height: auto;"/>
               <figcaption class="has-text-centered" style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                Molecular docking visualization showing NovoMolGen-generated compounds binding to protein targets <b><i>parp1</b></i> (top) and <b><i>braf</b></i> (bottom).
+                Molecular docking visualization showing NovoMolGen-generated compounds binding to protein targets <b><i>parp1</b></i> (top) and <b><i>braf</b></i> (bottom)
               </figcaption>
             </figure>
           </div>
@@ -233,7 +233,7 @@
         </div>
         <div class="has-text-centered" style="margin: 20px 0;">
           <figure class="image">
-            <img src="static/images/pretrain_results.jpg" alt="Pretrain Results" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
+            <img src="static/images/pretrain_results.jpg" alt="Pretrain Results" style="max-width: 85%; height: auto; margin: 0 auto; display: block;"/>
           </figure>
         </div>
         <div class="content has-text-justified">
